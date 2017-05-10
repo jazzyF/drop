@@ -64,10 +64,3 @@ def get_json(area_code) :
         return {}
     else :
         return [ convert_to_json(complaint)  for complaint in complaints ]
-
-def main() :
-    res = get_json('426')
-    for r in res :
-        print(r)
-
-main()
